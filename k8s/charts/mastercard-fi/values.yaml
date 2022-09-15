@@ -1,0 +1,26 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+global:
+  pullPolicy: Always
+
+webapp:
+  mastercardFi:
+    ui:
+      replicas: 2
+      resources:
+        limits:
+          cpu: 100m
+        requests:
+          cpu: 50m
+      image:
+        registry: harbor.intgdc.com
+        namespace: stable
+        tag: latest
+        name: mastercard-fi-ui
+      service:
+        name: mastercard-fi-ui
+        type: ClusterIP
+        # Port where containers expose application to this service
+        ingressPort: 20080
+        ingressHost: local.mastercard-fi-ui.webapp.k8s.intgdc.com
+        internalPort: 8080

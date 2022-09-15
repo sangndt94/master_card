@@ -1,0 +1,32 @@
+{
+  "id" : "a4f68bef-68a4-3bec-82b4-8d1fc036b914",
+  "request" : {
+    "url" : "/gdc/account/login",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"postUserLogin\":{\"login\":\"mastercard.testing+automated@gooddata.com\",\"password\":\"kUSnHA98tbAA45D\",\"remember\":1,\"captcha\":\"\",\"verifyCaptcha\":\"\"}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-account-login-YXthf.json",
+    "headers" : {
+      "Expires" : "Thu, 01 Jan 1970 00:00:00 GMT",
+      "Cache-Control" : "no-store, no-cache, must-revalidate, max-age=0",
+      "Pragma" : "no-cache",
+      "P3P" : "CP='IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT'",
+      "X-GDC-LOG-HEADER" : "",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 10:45:28 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "48",
+      "Set-Cookie" : [ "GDCAuthTT=Vl0xJUTD5N4EVxOsK1wceFU2cz8FFqMwp9CJmi36QNC8flpqA7TilLJ_9mJ8b6L45hMdM6BPXLcN5OppInhwq-j1LaqWON4oSE8VQgxKY-eoMAwBTtjaojcbweTZmM8espTEgciF4wI_GRc4-EzVVhwEzlEIYhOcipgNEKhVYSJ7ImwiOiIwIiwidSI6IjEyODg3OTQzIiwidiI6MTU5NzQwMjUyOCwiayI6ImNjNDM4ZTdhLWFmNjctNDk0MS04NzcyLWEwYWFjYjkwNGViOCIsImgiOiJmcmF1ZGRhc2hib2FyZC1kZXYubmEuZ29vZGRhdGEuY29tIn0; Path=/gdc; Domain=frauddashboard-dev.na.gooddata.com; Secure; HTTPOnly; SameSite=None", "GDCAuthSST=HtMS_erzvnP1ILml3tmfZOsbg7fh-AAAALGu_QZOaEpwz_oEoY6ZilVkeFmN; Expires=Sun, 30 Aug 2020 10:45:28 GMT; Path=/gdc/account; Domain=frauddashboard-dev.na.gooddata.com; Secure; HTTPOnly; SameSite=None" ],
+      "X-GDC-REQUEST" : "r8vxHmVwMDmyLvPU",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "a4f68bef-68a4-3bec-82b4-8d1fc036b914"
+}

@@ -1,0 +1,37 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false
+            }
+        ],
+        "@babel/react"
+    ],
+    "plugins": [
+        "styled-jsx/babel",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-transform-async-to-generator",
+        "@babel/plugin-proposal-optional-chaining",
+        "lodash"
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                "@babel/preset-typescript",
+                [
+                    "@babel/preset-env",
+                    {
+                        "targets": {
+                            "node": "current"
+                        },
+                        "modules": "auto" // jest needs modules enabled
+                    }
+                ],
+                "@babel/react"
+            ],
+            "plugins": ["styled-jsx/babel-test"]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mastercard-fi-ui
+  labels:
+    chart: mastercard-fi
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: mastercard-fi-ui
+    spec:
+      containers:
+      - name: mastercard-fi-ui
+        imagePullPolicy: Always
+        image: "mastercard-fi-ui:latest"
+        ports:
+        - containerPort: 8080
+        env:
+        - name: REACT_APP_API_HOST
+          value: localhost:30000

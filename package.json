@@ -1,0 +1,163 @@
+{
+    "name": "cust-mastercard-fi",
+    "version": "0.0.1",
+    "repository": "git@github.com:gooddata/cust-mastercard-fi.git",
+    "author": "GoodData Corporation",
+    "license": "UNLICENSED",
+    "private": true,
+    "devDependencies": {
+        "@babel/core": "7.4.4",
+        "@babel/plugin-proposal-class-properties": "7.4.4",
+        "@babel/plugin-proposal-object-rest-spread": "7.4.4",
+        "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+        "@babel/plugin-transform-async-to-generator": "7.4.4",
+        "@babel/polyfill": "^7.4.4",
+        "@babel/preset-env": "7.4.4",
+        "@babel/preset-react": "7.0.0",
+        "@babel/preset-typescript": "^7.9.0",
+        "@babel/runtime": "7.4.4",
+        "@gooddata/tslint-config": "^1.0.0",
+        "@gooddata/typings": "^2.18.0",
+        "@types/classnames": "^2.2.9",
+        "@types/enzyme": "^3.10.3",
+        "@types/jest": "^24.0.18",
+        "@types/react": "^16.9.2",
+        "@types/react-dom": "^16.9.0",
+        "@types/react-helmet": "^5.0.9",
+        "@types/react-outside-click-handler": "^1.3.0",
+        "@types/react-router-dom": "^5.1.2",
+        "@types/react-select": "^3.0.4",
+        "@types/styled-jsx": "^2.2.8",
+        "@types/yup": "^0.26.23",
+        "babel-loader": "8.0.6",
+        "babel-plugin-lodash": "3.3.4",
+        "circular-dependency-plugin": "5.0.2",
+        "clean-webpack-plugin": "2.0.2",
+        "compression-webpack-plugin": "2.0.0",
+        "cross-env": "^5.2.0",
+        "css-loader": "3.2.0",
+        "enzyme": "^3.10.0",
+        "enzyme-adapter-react-16": "^1.14.0",
+        "file-loader": "4.2.0",
+        "formik": "^0.11.11",
+        "html-webpack-plugin": "3.2.0",
+        "husky": "3.0.0",
+        "jest": "^24.8.0",
+        "jest-enzyme": "^7.1.0",
+        "jest-junit": "3.0.0",
+        "lint-staged": "9.1.0",
+        "madge": "^3.4.4",
+        "node-sass": "^4.12.0",
+        "node-sass-magic-importer": "5.1.0",
+        "prettier": "^2.0.2",
+        "raf": "3.3.2",
+        "raw-loader": "3.1.0",
+        "react-test-renderer": "16.8.6",
+        "sass-loader": "7.2.0",
+        "stats-webpack-plugin": "0.7.0",
+        "style-loader": "0.19.1",
+        "styled-jsx": "3.2.2",
+        "testcafe": "^1.4.0",
+        "ts-loader": "^6.2.1",
+        "tslint": "^5.19.0",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^3.8.3",
+        "webpack": "4.39.1",
+        "webpack-cli": "3.3.6",
+        "webpack-dev-server": "3.7.2",
+        "yup": "^0.24.1"
+    },
+    "dependencies": {
+        "@emotion/core": "^10.0.22",
+        "@emotion/serialize": "^0.11.14",
+        "@gooddata/frontend-npm-scripts": "^1.2.0",
+        "@gooddata/gooddata-js": "^11.21.0",
+        "@gooddata/goodstrap": "^64.6.0",
+        "@gooddata/js-utils": "^3.5.0",
+        "@gooddata/numberjs": "^3.2.2",
+        "@gooddata/react-components": "7.2.0-beta.91",
+        "@material-ui/styles": "^4.7.1",
+        "@types/html-to-text": "^5.1.0",
+        "@types/react-html-parser": "^2.0.1",
+        "classnames": "^2.2.6",
+        "emotion": "^10.0.23",
+        "html-to-text": "^5.1.1",
+        "immer": "^3.1.3",
+        "js-cookie": "^2.2.1",
+        "json-stable-stringify": "^1.0.1",
+        "lodash": "^4.17.15",
+        "prop-types": "^15.6.0",
+        "rc-slider": "9.2.4",
+        "react": "16.8.6",
+        "react-dom": "16.8.6",
+        "react-grid-system": "^6.0.7",
+        "react-helmet": "^5.2.1",
+        "react-html-parser": "^2.0.2",
+        "react-outside-click-handler": "^1.3.0",
+        "react-router-dom": "^5.1.2",
+        "react-router-hash-link": "^1.2.2",
+        "react-select": "^3.1.0",
+        "react-select-async-paginate": "^0.3.14",
+        "react-textfit": "^1.1.0",
+        "svg-path-bounds": "^1.0.1",
+        "tinycolor2": "^1.4.1"
+    },
+    "config": {
+        "tslint": "./src/**/*.{ts,tsx}"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --hot --https",
+        "prepublishOnly": "yarn build",
+        "build": "webpack --mode=production",
+        "test": "jest --watch",
+        "test-once": "jest",
+        "testcafe": "./scripts/run-testcafe.js",
+        "testcafe-video": "cross-env TEST_MODE=video ./scripts/run-testcafe.js",
+        "testcafe-visual": "cross-env TEST_MODE=visual ./scripts/run-testcafe.js",
+        "testcafe-ci": "cross-env TEST_MODE=ci ./scripts/run-testcafe.js",
+        "testcafe-checklist": "cross-env TEST_MODE=checklist ./scripts/run-testcafe.js",
+        "testcafe-checklist-visual": "cross-env TEST_MODE=checklist-visual ./scripts/run-testcafe.js",
+        "install-with-retry": "./scripts/yarn-install-with-retry.sh",
+        "prettier-check": "prettier --check '{src,styles,__mocks__}/**/*.{ts,tsx,scss,md,yaml,html}'",
+        "prettier-write": "prettier --write '{src,styles,__mocks__}/**/*.{ts,tsx,scss,md,yaml,html}'",
+        "check-circular-deps": "madge --circular --extensions ts,tsx ./src",
+        "validate": "tslint $npm_package_config_tslint && yarn prettier-check",
+        "validate-ci": "tslint $npm_package_config_tslint -t checkstyle -o ci/results/eslint-results.xml && yarn prettier-check"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "<rootDir>/jest.setup.js",
+            "<rootDir>/node_modules/jest-enzyme/lib/index.js"
+        ],
+        "testPathIgnorePatterns": [
+            "/node_modules/",
+            "/dist/"
+        ],
+        "collectCoverageFrom": [
+            "src/**/*.{ts,tsx}"
+        ],
+        "collectCoverage": false,
+        "moduleNameMapper": {
+            "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/jestSvgStub.js",
+            "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/jestStyleStub.js"
+        },
+        "coverageReporters": [
+            "html"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "{src,styles,__mocks__}/**/*.{ts,tsx,json,scss,md,yaml,html}": [
+            "prettier --write",
+            "git add"
+        ],
+        "{src,styles,__mocks__}./**/*.{ts,js,tsx,jsx,scss}": [
+            "npx gdc-fix-copyright",
+            "git add"
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "id" : "07902f1c-c3f4-39d2-b61c-bc7e2ea89cd1",
+  "request" : {
+    "url" : "/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/577/validElements?limit=50&offset=0&filter=100222%20ASSOCIATED%20BANK%20%20N.A.",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"validElementsRequest\":{}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-md-hocgq43aohjqhclhuhxdr931n0s0o6tj-obj-577-validElements-LNJIn.json",
+    "headers" : {
+      "Date" : "Mon, 13 Jul 2020 14:59:41 GMT",
+      "Server" : "GoodData WebApp",
+      "Keep-Alive" : "timeout=5, max=33",
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "X-GDC-REQUEST-TIME" : "30",
+      "X-GDC-REQUEST" : "222bFaQMBCNhmdwe",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "07902f1c-c3f4-39d2-b61c-bc7e2ea89cd1"
+}

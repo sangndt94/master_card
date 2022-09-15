@@ -1,0 +1,24 @@
+{
+  "id" : "e148b5ec-603a-380e-86d4-cd861bd02caf",
+  "request" : {
+    "url" : "/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/1125",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-md-hocgq43aohjqhclhuhxdr931n0s0o6tj-obj-1125-u9hNF.json",
+    "headers" : {
+      "Date" : "Mon, 13 Jul 2020 14:59:12 GMT",
+      "Server" : "GoodData WebApp",
+      "Keep-Alive" : "timeout=5, max=72",
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "X-GDC-REQUEST-TIME" : "20",
+      "X-GDC-REQUEST" : "RPHNtFdZCWGomSKz",
+      "vary" : "Accept-Encoding,origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "e148b5ec-603a-380e-86d4-cd861bd02caf"
+}

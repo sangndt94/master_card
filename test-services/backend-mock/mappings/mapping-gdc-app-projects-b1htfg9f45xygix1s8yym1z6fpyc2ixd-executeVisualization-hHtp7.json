@@ -1,0 +1,28 @@
+{
+  "id" : "8cc90eaa-3dde-3a97-95a4-5a5bf55a7ed5",
+  "request" : {
+    "url" : "/gdc/app/projects/b1htfg9f45xygix1s8yym1z6fpyc2ixd/executeVisualization",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"visualizationExecution\":{\"reference\":\"/gdc/md/b1htfg9f45xygix1s8yym1z6fpyc2ixd/obj/849\",\"resultSpec\":{\"dimensions\":[{\"itemIdentifiers\":[\"measureGroup\"]},{\"itemIdentifiers\":[\"fe1f72f013aa472e8d2899a03dbb2a12\"]}]},\"filters\":[{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.customer.cid.name\"},\"in\":[\"/gdc/md/b1htfg9f45xygix1s8yym1z6fpyc2ixd/obj/483/elements?id=8\"]}}]}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "bodyFileName" : "body-gdc-app-projects-b1htfg9f45xygix1s8yym1z6fpyc2ixd-executeVisualization-hHtp7.json",
+    "headers" : {
+      "content-type" : "application/json;charset=utf-8",
+      "date" : "Fri, 14 Aug 2020 14:46:16 GMT",
+      "x-envoy-upstream-service-time" : "938",
+      "server" : "istio-envoy",
+      "X-GDC-REQUEST-TIME" : "942",
+      "X-GDC-REQUEST" : "CX3Aj78Oj93wB7WJ",
+      "cache-control" : "no-cache, no-store, must-revalidate",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "8cc90eaa-3dde-3a97-95a4-5a5bf55a7ed5"
+}

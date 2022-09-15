@@ -1,0 +1,24 @@
+// (C) 2020 GoodData Corporation
+export { IconCalculator } from "./IconCalculator";
+export { IconChart } from "./IconChart";
+export { IconCheck } from "./IconCheck";
+export { IconChevronDown } from "./IconChevronDown";
+export { IconChevronUp } from "./IconChevronUp";
+export { IconClose } from "./IconClose";
+export { IconCsv } from "./IconCsv";
+export { IconError } from "./IconError";
+export { IconExcel } from "./IconExcel";
+export { IconExport } from "./IconExport";
+export { IconGlossary } from "./IconGlossary";
+export { IconInfo } from "./IconInfo";
+export { IconLightBulb } from "./IconLightBulb";
+export { IconList } from "./IconList";
+export { IconMissing } from "./IconMissing";
+export { IconProduct } from "./IconProduct";
+export { IconSearch } from "./IconSearch";
+export { IconSettings } from "./IconSettings";
+export { IconTip } from "./IconTip";
+export { IconThickInfo } from "./IconThickInfo";
+export { IconUndo } from "./IconUndo";
+export { IconWarning } from "./IconWarning";
+export { IconInterActivity } from "./IconInteractivity";

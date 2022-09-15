@@ -1,0 +1,24 @@
+{
+  "id" : "f0b9a81d-752d-3d32-b23e-3b7d18d298a6",
+  "request" : {
+    "url" : "/gdc/account/token",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 401,
+    "bodyFileName" : "body-gdc-account-token-Njb0m.txt",
+    "headers" : {
+      "WWW-Authenticate" : "GoodData realm=\"GoodData API\" cookie=GDCAuthSST location=/gdc/account/login",
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Date" : "Mon, 13 Jul 2020 14:58:25 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "2",
+      "Set-Cookie" : "GDCAuthSST=\"\"; Expires=Thu, 1 Jan 1970 00:00:10 GMT; Path=/gdc/account; Domain=frauddashboard-dev.na.gooddata.com; Secure; SameSite=None",
+      "X-GDC-REQUEST" : "yJoUFWvYOCNPobGX",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "f0b9a81d-752d-3d32-b23e-3b7d18d298a6"
+}

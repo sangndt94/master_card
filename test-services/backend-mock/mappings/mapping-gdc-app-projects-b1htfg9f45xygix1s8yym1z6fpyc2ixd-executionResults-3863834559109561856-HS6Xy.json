@@ -1,0 +1,23 @@
+{
+  "id" : "28e9ca20-d7c5-3e50-9336-69ec94acdb58",
+  "request" : {
+    "url" : "/gdc/app/projects/b1htfg9f45xygix1s8yym1z6fpyc2ixd/executionResults/3863834559109561856?c=5f248c67747da7b2fed44f4474064096&q=eAGlk1FrwjAUhf9KiS8O6tps2qkwhrNVCtpKq4iID9FE7dY0JY1oJ%2F73JXOCYwxWC3lokpvznZ6b%0AHAEnKePCQ5SANpgkIhIxwUAHKxbvaJKB9vwIcJSlMcp7jFMXyzJjg1cGxcYSbsV601rXG4d8Ex1g%0A1sxzCj%2BsdZqvHqIDNtjyzajXLSm3RBlxYkJJIiaBW1gDQoOcT2cvEX6WgkgIHi13gtzgCEIpgHkU%0AxzbbJ6EgaeeiZvcKe2sotUyGKE%2Bm7%2Bp7RyniuZwOWSK2GkqwNiOIX7seq5wvFYba1aojwiOG72TZ%0AVxf%2B3mUCxaoz84X%2BayxOCx1QIsNZnZu3ll1DyltFr1TMe9P84fAKNvWDgT11bUeunQWKR%2FtkNsBJ%0AP4J%2FQwOn7%2FpeKWK9GLHrT7xxMCuDbD0WQ44cJwjLAGHBVBVQe3XCcc31at1BJyxFN1vFfnfoaFXP%0AH2vdgR86trrPt14n2LCsouwSOMtqAvV8ONurt%2FNtu8%2FZLgWL0ydy7qcb%0A&offset=0%2C0&limit=1000%2C1000&dimensions=2&totals=0%2C0",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-app-projects-b1htfg9f45xygix1s8yym1z6fpyc2ixd-executionResults-3863834559109561856-HS6Xy.json",
+    "headers" : {
+      "Cache-Control" : "max-age=86400,private",
+      "X-GDC-LOG-HEADER" : "",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 14:46:16 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "30",
+      "X-GDC-REQUEST" : "QRJTcLsIKUq7fEKy",
+      "vary" : "Accept,Accept-Encoding,origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "28e9ca20-d7c5-3e50-9336-69ec94acdb58"
+}

@@ -1,0 +1,14 @@
+{  
+  "request" : {
+    "url" : "/gdc/account/login",
+    "method" : "POST"   
+  },
+  "response" : {
+    "status" : 200,   
+    "headers" : {      
+      "Content-Type" : "application/json;charset=utf-8"      
+    },
+	"jsonBody": {
+    }
+  } 
+}

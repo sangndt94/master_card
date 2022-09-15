@@ -1,0 +1,24 @@
+{
+  "id" : "df93e03d-7ca8-3542-b9b8-204a30442b54",
+  "request" : {
+    "url" : "/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/583/validElements?c=4bc2810efdcdaaf1e25eecce99d7d2b9&q=eAE1T0tuxSAMvAvrLAiEX69SVYiP06KSEBFHb1H17jUvfV5Y9sgznvlha6kInb0xNtG8f0I%2FetmR%0AgBSzFiom6QASn50wAUx0s8vB6EVaIqS2HRU2GPf7VevEjk4Q%2BpJfQNlTvTJ4bBiqfxT8ahf6%2B%2Bv5%0AOsJwfj85jGtuYXZSLmGJ1kUwq0xKJ5W0VU4amxV3i45CSG1Wk%2FkoISKZwYIVSPL9Y2JwuyLNf6D1%0APFLeJgNi96nVk9r1zDoTv5atjNyK09LW9YSxcfb7B0apXPM%3D%0A",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-md-hocgq43aohjqhclhuhxdr931n0s0o6tj-obj-583-validElements-iqcZ4.json",
+    "headers" : {
+      "Date" : "Fri, 14 Aug 2020 10:46:57 GMT",
+      "Server" : "GoodData WebApp",
+      "Keep-Alive" : "timeout=5, max=77",
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "X-GDC-REQUEST-TIME" : "29",
+      "X-GDC-REQUEST" : "ObYmnmSMviCZpmmz",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "df93e03d-7ca8-3542-b9b8-204a30442b54"
+}

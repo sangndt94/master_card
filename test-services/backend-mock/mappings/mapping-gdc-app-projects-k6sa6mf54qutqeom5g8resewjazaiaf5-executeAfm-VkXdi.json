@@ -1,0 +1,28 @@
+{
+  "id" : "a19fbb21-3809-3b64-870a-8334fa026cde",
+  "request" : {
+    "url" : "/gdc/app/projects/k6sa6mf54qutqeom5g8resewjazaiaf5/executeAfm",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"execution\":{\"afm\":{\"measures\":[{\"localIdentifier\":\"6932cbac15894e4d84bae314b85e0fd2\",\"definition\":{\"measure\":{\"item\":{\"uri\":\"/gdc/md/k6sa6mf54qutqeom5g8resewjazaiaf5/obj/740\"}}},\"alias\":\"CLOSED\"},{\"localIdentifier\":\"221faffae59c4847b75a58ddf58c96ab\",\"definition\":{\"measure\":{\"item\":{\"uri\":\"/gdc/md/k6sa6mf54qutqeom5g8resewjazaiaf5/obj/2036\"}}},\"alias\":\"NOT CLOSED\"}],\"attributes\":[{\"displayForm\":{\"uri\":\"/gdc/md/k6sa6mf54qutqeom5g8resewjazaiaf5/obj/508\"},\"localIdentifier\":\"8137d69f360242e2bb6dd805e79d00f3\"}],\"filters\":[{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.customer.cid.name\"},\"in\":{\"uris\":[\"/gdc/md/k6sa6mf54qutqeom5g8resewjazaiaf5/obj/586/elements?id=5763\"]}}}]},\"resultSpec\":{\"dimensions\":[{\"itemIdentifiers\":[\"measureGroup\"]},{\"itemIdentifiers\":[\"8137d69f360242e2bb6dd805e79d00f3\"]}]}}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "bodyFileName" : "body-gdc-app-projects-k6sa6mf54qutqeom5g8resewjazaiaf5-executeAfm-VkXdi.json",
+    "headers" : {
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 14:41:40 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "113",
+      "X-GDC-REQUEST" : "ya1rwh6LEsDwWA8b",
+      "vary" : "Accept-Encoding,origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "a19fbb21-3809-3b64-870a-8334fa026cde"
+}

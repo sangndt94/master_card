@@ -1,0 +1,28 @@
+{
+  "id" : "8c8aa9d4-c254-3458-945a-3a3cdd7ccf39",
+  "request" : {
+    "url" : "/gdc/app/projects/hocgq43aohjqhclhuhxdr931n0s0o6tj/executeAfm",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"execution\":{\"afm\":{\"measures\":[{\"localIdentifier\":\"12b96102336a439b868c6295b33ea3b9\",\"definition\":{\"measure\":{\"item\":{\"uri\":\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/740\"}}},\"alias\":\"GROSS FRAUD\"},{\"localIdentifier\":\"8bcc53ff26c443ae8fa69b162e43516b\",\"definition\":{\"measure\":{\"item\":{\"uri\":\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/739\"}}},\"alias\":\"NET FRAUD\"}],\"attributes\":[{\"displayForm\":{\"uri\":\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/507\"},\"localIdentifier\":\"023019e771b74e62906211b0db649165\"}],\"filters\":[{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.customer.cid.name\"},\"in\":{\"uris\":[\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/576/elements?id=396\"]}}},{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.acquirerbenchmarking.region\"},\"in\":{\"uris\":[\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/587/elements?id=104\"]}}},{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.acquirerbenchmarking.country\"},\"in\":{\"uris\":[\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/582/elements?id=104\"]}}}]},\"resultSpec\":{\"dimensions\":[{\"itemIdentifiers\":[\"measureGroup\"]},{\"itemIdentifiers\":[\"023019e771b74e62906211b0db649165\"]}]}}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "bodyFileName" : "body-gdc-app-projects-hocgq43aohjqhclhuhxdr931n0s0o6tj-executeAfm-uInk9.json",
+    "headers" : {
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 10:47:13 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "151",
+      "X-GDC-REQUEST" : "pRhQXfujDoe0iPIN",
+      "vary" : "Accept-Encoding,origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "8c8aa9d4-c254-3458-945a-3a3cdd7ccf39"
+}

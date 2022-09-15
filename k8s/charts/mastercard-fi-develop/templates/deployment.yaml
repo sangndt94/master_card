@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "mastercard-fi.fullname" . }}-ui
+  labels:
+    app: {{ include "mastercard-fi.fullname" . }}-ui
+    team: honeybadgers
+    app.kubernetes.io/name: {{ include "mastercard-fi.name" . }}
+    helm.sh/chart: {{ include "mastercard-fi.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    app.kubernetes.io/component: ui
+    app.kubernetes.io/part-of: mastercard-fi
+spec:
+  replicas: {{ .Values.webapp.mastercardFi.uiDevelop.replicas }}
+  selector:
+    matchLabels:
+      app: {{ include "mastercard-fi.fullname" . }}-ui
+      app.kubernetes.io/name: {{ include "mastercard-fi.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+      app.kubernetes.io/component: ui
+  template:
+    metadata:
+      labels:
+        app: {{ include "mastercard-fi.fullname" . }}-ui
+        team: honeybadgers
+        app.kubernetes.io/name: {{ include "mastercard-fi.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+        app.kubernetes.io/component: ui
+        app.kubernetes.io/part-of: mastercard-fi
+    spec:
+      containers:
+      - name: {{ .Chart.Name }}
+        imagePullPolicy: {{ default "" .Values.global.pullPolicy }}
+        {{- with .Values.webapp.mastercardFi.uiDevelop }}
+        image: "{{ .image.registry }}/{{ .image.namespace }}/{{ .image.name }}:{{ .image.tag }}"
+        ports:
+        - name: http-ui
+          containerPort: {{ .service.internalPort }}
+        livenessProbe:
+          httpGet:
+            path: /fraudinsights
+            port: {{ .service.internalPort }}
+          initialDelaySeconds: 30
+          timeoutSeconds: 5
+          failureThreshold: 6
+        readinessProbe:
+          httpGet:
+            path: /fraudinsights
+            port: {{ .service.internalPort }}
+          initialDelaySeconds: 5
+          timeoutSeconds: 3
+          periodSeconds: 5
+        {{- end }}
+        securityContext:
+          runAsUser: 101
+          allowPrivilegeEscalation: false
+        env:
+        - name: REACT_APP_API_HOST
+          value: {{ .Values.webapp.mastercardFi.uiDevelop.service.ingressHost }}:{{ .Values.webapp.mastercardFi.uiDevelop.service.ingressPort }}
+        resources:
+        {{- with .Values.webapp.mastercardFi.uiDevelop.resources }}
+          requests:
+            cpu: {{ .requests.cpu }}
+          limits:
+            cpu: {{ .limits.cpu }}
+        {{- end}}

@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "mastercard-fi.fullname" . }}-monitoring-rules
+  namespace: monitoring
+  labels:
+    team: honeybadgers
+    app.kubernetes.io/name: {{ include "mastercard-fi.name" . }}
+    helm.sh/chart: {{ include "mastercard-fi.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+data:
+  {{ include "mastercard-fi.fullname" . }}-monitoring-rules.yaml: |+
+    groups:
+    - name: {{ include "mastercard-fi.fullname" . }}-monitoring-rules
+      rules:
+      - alert: "[{{ include "mastercard-fi.fullname" . }}] has too many restarts on cluster={{ .Values.clusterId }}"
+        expr: sum(delta(kube_pod_container_status_restarts_total{namespace='{{ .Release.Namespace }}', pod=~'^{{ include "mastercard-fi.fullname" . }}\\..*'}[30m])) without (pod) >= 2
+        labels:
+          severity: warning
+          team: honeybadgers # Used to reflect Icinga style alerting
+          cluster_id: {{ .Values.clusterId }}
+        annotations:
+          description: "There is more than 1 restart of master pod in the last 30 minutes"
+          summary: "[{{ include "mastercard-fi.fullname" . }}] has too many restarts"
+      - alert: "[{{ include "mastercard-fi.fullname" . }}] has critical number of replicas on cluster={{ .Values.clusterId }}"
+        expr: kube_deployment_status_replicas_available{namespace='{{ .Release.Namespace }}', deployment=~'^{{ include "mastercard-fi.fullname" . }}\\..*'} < 1
+        for: 2m
+        labels:
+          severity: warning
+          team: honeybadgers # Used to reflect Icinga style alerting
+          cluster_id: {{ .Values.clusterId }}
+        annotations:
+          description: "There are 0 replicas of Vertica Monitoring"
+          summary: "[{{ include "mastercard-fi.fullname" . }}] has not enough replicas"
+      - alert: "[{{ include "mastercard-fi.fullname" . }}] OOMKill occured on cluster={{ .Values.clusterId }}"
+        expr: sum(increase(kube_pod_container_status_terminated_reason{namespace='{{ .Release.Namespace }}', reason='OOMKilled', pod=~'^{{ include "mastercard-fi.fullname" . }}\\..*'}[30m])) without (pod, reason) > 0
+        labels:
+          severity: warning
+          team: honeybadgers # Used to reflect Icinga style alerting
+          cluster_id: {{ .Values.clusterId }}
+        annotations:
+          description: "{{ include "mastercard-fi.fullname" . }} Service was OOMKilled in the last 30 minutes. Investigate and/or increase memoryRequest or memoryLimit."
+          summary: "[{{ include "mastercard-fi.fullname" . }}] OOMKill occured"
+      - alert: "[{{ include "mastercard-fi.fullname" . }}] Container exited with error on cluster={{ .Values.clusterId }}"
+        expr: sum(increase(kube_pod_container_status_terminated_reason{namespace='{{ .Release.Namespace }}', reason!~"Completed|OOMKilled", pod=~'^{{ include "mastercard-fi.fullname" . }}\\..*'}[30m])) without (pod, reason) > 0
+        labels:
+          severity: warning
+          team: honeybadgers # Used to reflect Icinga style alerting
+          cluster_id: {{ .Values.clusterId }}
+        annotations:
+          description: "{{ include "mastercard-fi.fullname" . }} Service container exited with non-zero exit code in the last 30 minutes. Investigate and fix."
+          summary: "[{{ include "mastercard-fi.fullname" . }}] Container exited with error"

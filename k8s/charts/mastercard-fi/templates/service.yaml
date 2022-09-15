@@ -1,0 +1,21 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ include "mastercard-fi.fullname" . }}-ui
+  labels:
+    team: honeybadgers
+    app.kubernetes.io/name: {{ include "mastercard-fi.name" . }}
+    helm.sh/chart: {{ include "mastercard-fi.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    app.kubernetes.io/component: ui
+    app.kubernetes.io/part-of: mastercard-fi
+spec:
+  ports:
+    - name: http-ui
+      port: 8080
+      targetPort: 8080
+  selector:
+    app.kubernetes.io/name: {{ include "mastercard-fi.name" . }}
+    app.kubernetes.io/component: ui
+    app.kubernetes.io/instance: {{ .Release.Name }}

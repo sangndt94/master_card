@@ -1,0 +1,23 @@
+{
+  "id" : "b2b242df-746c-33d6-9f47-52a704923a3d",
+  "request" : {
+    "url" : "/gdc/account/profile/5268367ba3319f3139c4fe107111178a/config/mcfiVersion",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-account-profile-5268367ba3319f3139c4fe107111178a-config-mcfiVersion-8t8S5.json",
+    "headers" : {
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 14:44:04 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "9",
+      "X-GDC-REQUEST" : "kWqFB0pvmzbcxx1I",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "b2b242df-746c-33d6-9f47-52a704923a3d"
+}

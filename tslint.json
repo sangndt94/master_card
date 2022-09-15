@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "@gooddata/tslint-config",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "jsx-boolean-value": false,
+    "jsx-no-lambda": false,
+    "no-http-string": [
+      true,
+      "http://www.w3.org/.*"
+    ],
+    "no-unused-expression": [true, "allow-fast-null-checks"]
+  }
+}

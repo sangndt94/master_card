@@ -1,0 +1,28 @@
+{
+  "id" : "975066de-7da2-3c1b-a810-870a4cab26a5",
+  "request" : {
+    "url" : "/gdc/app/projects/k6sa6mf54qutqeom5g8resewjazaiaf5/executeAfm",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"execution\":{\"afm\":{\"measures\":[{\"localIdentifier\":\"37276820dd9a46b59647e2ea4c6f5dd7\",\"definition\":{\"measure\":{\"item\":{\"uri\":\"/gdc/md/k6sa6mf54qutqeom5g8resewjazaiaf5/obj/852\"}}},\"alias\":\"ME\"}],\"attributes\":[{\"displayForm\":{\"uri\":\"/gdc/md/k6sa6mf54qutqeom5g8resewjazaiaf5/obj/508\"},\"localIdentifier\":\"9ea90a94cd3343a9b75a6da246df1e61\"}],\"filters\":[{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.customer.cid.name\"},\"in\":{\"uris\":[\"/gdc/md/k6sa6mf54qutqeom5g8resewjazaiaf5/obj/586/elements?id=5763\"]}}}]},\"resultSpec\":{\"dimensions\":[{\"itemIdentifiers\":[\"measureGroup\"]},{\"itemIdentifiers\":[\"9ea90a94cd3343a9b75a6da246df1e61\"]}]}}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "bodyFileName" : "body-gdc-app-projects-k6sa6mf54qutqeom5g8resewjazaiaf5-executeAfm-YF4Mr.json",
+    "headers" : {
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 14:41:41 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "117",
+      "X-GDC-REQUEST" : "Jpj0pxYt7OFXBM0O",
+      "vary" : "Accept-Encoding,origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "975066de-7da2-3c1b-a810-870a4cab26a5"
+}

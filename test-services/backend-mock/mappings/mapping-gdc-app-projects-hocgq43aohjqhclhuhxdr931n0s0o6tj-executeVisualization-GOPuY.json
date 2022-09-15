@@ -1,0 +1,28 @@
+{
+  "id" : "8e0abf7c-59ff-364d-b98c-c282a78673a0",
+  "request" : {
+    "url" : "/gdc/app/projects/hocgq43aohjqhclhuhxdr931n0s0o6tj/executeVisualization",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"visualizationExecution\":{\"reference\":\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/1020\",\"resultSpec\":{\"dimensions\":[{\"itemIdentifiers\":[\"measureGroup\"]},{\"itemIdentifiers\":[\"c399ee16458441a998d89d8c333e3ec1\"]}]},\"filters\":[{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.customer.cid.name\"},\"in\":[\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/576/elements?id=396\"]}},{\"positiveAttributeFilter\":{\"displayForm\":{\"identifier\":\"label.acquirerbenchmarking.region\"},\"in\":[\"/gdc/md/hocgq43aohjqhclhuhxdr931n0s0o6tj/obj/587/elements?id=104\"]}}]}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "bodyFileName" : "body-gdc-app-projects-hocgq43aohjqhclhuhxdr931n0s0o6tj-executeVisualization-GOPuY.json",
+    "headers" : {
+      "content-type" : "application/json;charset=utf-8",
+      "date" : "Fri, 14 Aug 2020 10:47:02 GMT",
+      "x-envoy-upstream-service-time" : "1377",
+      "server" : "istio-envoy",
+      "X-GDC-REQUEST-TIME" : "1380",
+      "X-GDC-REQUEST" : "ifMC8iyEhgQ8c2Z7",
+      "cache-control" : "no-cache, no-store, must-revalidate",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "8e0abf7c-59ff-364d-b98c-c282a78673a0"
+}

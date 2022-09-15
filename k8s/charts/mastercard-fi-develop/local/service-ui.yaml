@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mastercard-fi-ui
+  labels:
+    chart: mastercard-fi
+spec:
+  type: NodePort
+  ports:
+  - port: 30000
+    nodePort: 30001
+    protocol: TCP
+    name: mastercard-fi-ui
+  selector:
+    app: mastercard-fi-ui

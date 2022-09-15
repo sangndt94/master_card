@@ -1,0 +1,33 @@
+microservices:
+  mastercard-fi-ui-develop:
+    docker:
+      dockerfile: './Dockerfile'
+      customTags:
+        - 'latest'
+      cacheFromTag: 'latest'
+      tests:
+        isolated:
+          artifacts:
+            - 'ci/screenshots/**'
+          junitArtifacts:
+            - 'ci/results/**/*.xml'
+    chartPath: 'webapp.mastercardFi.uiDevelop.image'
+charts:
+  - 'mastercard-fi-develop'
+
+customConstants:
+  integratedTests.runTestsAgainstPR: true
+
+integratedTests:
+  - kind: 'image'
+    env: bash
+    path: .
+    repo_mount_dir: /src
+    vault:
+      TEST_PASSWORD: mastercard-fi-test-user
+    command: export TEST_TARGET_VERSION=1 && export TEST_USERNAME=mastercard.testing@gooddata.com && export TEST_BACKEND=https://staging-lcm-dev.intgdc.com/fraudinsights/ && ./scripts/run-testcafe-ci.sh
+    image: harbor.intgdc.com/tools/gdc-node-chrome:8.12.0_67.0.3396
+    artifacts:
+      - _screenshots/**
+    microservices:
+      - mastercard-fi-ui-develop

@@ -1,0 +1,4 @@
+apiVersion: v1
+description: SBA for MasterCard Fraud Insights DEVELOP
+name: mastercard-fi-develop
+version: 1.0.3

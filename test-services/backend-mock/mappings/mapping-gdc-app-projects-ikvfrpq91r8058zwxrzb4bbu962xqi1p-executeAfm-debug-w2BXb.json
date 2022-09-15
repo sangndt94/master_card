@@ -1,0 +1,29 @@
+{
+  "id" : "c54ffb06-f92f-309e-bb39-c0ab9cc8c966",
+  "request" : {
+    "url" : "/gdc/app/projects/ikvfrpq91r8058zwxrzb4bbu962xqi1p/executeAfm/debug",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"execution\":{\"afm\":{\"attributes\":[{\"displayForm\":{\"identifier\":\"label.issuerbenchmarking.issuerica.icaname\"},\"localIdentifier\":\"childAttribute\"}],\"filters\":[{\"expression\":{\"value\":\"({attr.customer.cid} IN ([/gdc/md/ikvfrpq91r8058zwxrzb4bbu962xqi1p/obj/518/elements?id=8])) OVER {attr.issuerbenchmarking.factsof} TO {attr.issuerbenchmarking.issuerica}\"}}]}}}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-app-projects-ikvfrpq91r8058zwxrzb4bbu962xqi1p-executeAfm-debug-w2BXb.json",
+    "headers" : {
+      "X-GDC-DEPRECATED" : "End-of-life=Sat, 16 Jan 2021 08:00:00 GMT; valid-version=5",
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 14:44:12 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "23",
+      "X-GDC-REQUEST" : "REZGuB7v1tTO5Gz2",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "c54ffb06-f92f-309e-bb39-c0ab9cc8c966"
+}

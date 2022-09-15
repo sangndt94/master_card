@@ -1,0 +1,23 @@
+{
+  "id" : "d1c4adf7-a657-3bbd-a3a9-0a2f80f95376",
+  "request" : {
+    "url" : "/gdc/projects/k6sa6mf54qutqeom5g8resewjazaiaf5/styleSettings",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-gdc-projects-k6sa6mf54qutqeom5g8resewjazaiaf5-styleSettings-D14tF.json",
+    "headers" : {
+      "X-GDC-LOG-HEADER" : "",
+      "Cache-Control" : "no-cache, no-store, must-revalidate",
+      "Content-Type" : "application/json;charset=utf-8",
+      "Date" : "Fri, 14 Aug 2020 14:41:38 GMT",
+      "Server" : "GoodData WebApp",
+      "X-GDC-REQUEST-TIME" : "13",
+      "X-GDC-REQUEST" : "BypdwcFQ14MRyxF9",
+      "vary" : "origin,X-GDC-VERSION",
+      "Strict-Transport-Security" : "max-age=10886400; includeSubDomains; preload;"
+    }
+  },
+  "uuid" : "d1c4adf7-a657-3bbd-a3a9-0a2f80f95376"
+}
